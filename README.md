@@ -20,3 +20,5 @@ E rodar o websocket:
 ```
 php websocket.php
 ```
+
+![](example.gif)
