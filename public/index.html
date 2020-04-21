@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Websocket Chat</title>
+    <link rel="stylesheet" type="text/css" href="css/chat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h4>
+                Chat Websocket
+            </h4>
+
+            <div class="users-toggle">
+                <a class="material-icons" onclick="showUsers()">
+                    people
+                </a>
+            </div>
+        </header>
+
+        <section id ="users" class="users">
+            <div class="users-title">
+                <h4 class="border-bottom text-center">Users online</h4>
+                <a id="hideUsers" class="material-icons" onclick="hideUsers()">
+                    close
+                </a>
+            </div>
+            <ul id="list-users"></ul>
+        </section>
+
+        <section class="chat" id="chat-area">
+            <ul id="list-messages"></ul>
+        </section>
+
+        <section class="msg-input-area">
+            <textarea id="text-input"></textarea>
+        </section>
+    </div>
+
+    <div id="modal-container" class="modal-container">
+        <section class="modal-user-register">
+            <h4>Enter Username</h4>
+            <input type="text" id="input-user-register" />
+            <button id="btn-register-user">Register</button>
+        </section>
+    </div>
+    <script type="module" src="./js/src/main.js"></script>
+    <script>
+    
+    function showUsers(){
+        document.getElementById('users').classList.toggle('on', true);
+    }
+
+    function hideUsers(){
+        document.getElementById('users').classList.toggle('on', false);
+    }
+    </script>
+</body>
+
+</html>

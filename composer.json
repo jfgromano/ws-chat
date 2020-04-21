@@ -1,0 +1,19 @@
+{
+    "name": "joao-romano/ws-chat",
+    "description": "Projeto de um chat simples utilizando php e atualizacao em tempo real com websocket",
+    "authors": [
+        {
+            "name": "Joao Romano",
+            "email": "felipe.gromano@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ChatWS\\": "src"
+        }
+    },
+    "require": {
+        "cboden/ratchet": "^0.4.2",
+        "jfgromano/websocket-router": "^1.0"
+    }
+}
